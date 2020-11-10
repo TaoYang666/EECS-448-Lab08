@@ -1,0 +1,32 @@
+.title
+{
+    text-align: center;
+}
+
+.prof
+{
+    width: 1100px;
+    height: 400px;
+    background-size: contain;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.prof bio 
+{
+    width:600px;
+    height:200px;
+    margin:20px;
+}
+
+.prof picture
+{
+    width:400px;
+    height:225px;
+    margin:20px;
+}
+
+.video
+{
+    margin:auto;
+}

@@ -1,0 +1,26 @@
+
+.title
+{
+    text-align: center;
+}
+
+.img-wrapper
+{
+    width: 800px;
+    height: 800px;
+    background-size: contain;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.img-wrapper img
+{
+    width: 600px;
+    height: 405px;
+    margin: 100px;
+}
+
+.img-wrapper button
+{
+    margin:40px 160px;
+}

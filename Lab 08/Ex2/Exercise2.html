@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h3 class="title">Exercise 2: Slide show!</h3>
+        <div class="img-wrapper">
+            <img src="img/1.png">
+            <button id="last">Last</button>
+            <button id="next">Next</button>
+        </div>
+    </body>
+    <script type="text/javascript">
+        window.onload=function()
+        {
+            let last=document.getElementById("last");
+            let next=document.getElementById("next");
+            let img = document.getElementsByTagName("img")[0];
+            let imgArr = ["img/1.png", "img/2.png", "img/3.png", "img/4.png", "img/5.png"];
+            let index=0;
+           
+
+            last.onclick=function()
+            {
+                index--;
+                if(index<0)
+                {
+                    index=imgArr.length-1;
+                }
+                img.src=imgArr[index];
+            };
+
+            next.onclick=function()
+            {
+                index++;
+                if(index>imgArr.length-1)
+                {
+                    index=0;
+                }
+                img.src=imgArr[index];
+            };
+        };
+    </script>
+</html>

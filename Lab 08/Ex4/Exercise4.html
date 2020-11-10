@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <center>
+        <h3>Exercise 4: CSS Manipulation</h3>
+        <div>
+            <h3>Border:</h3>
+            <h3>red value  
+                <input type="text" id="bR">
+            </h3>
+            <h3>green value
+                <input type="text" id="bG">
+            </h3>
+            <h3>blue value
+                <input type="text" id="bB">
+            </h3>
+            <h3>width    
+                <input type="text" id="bW">
+            </h3>
+        </div>
+        <div>
+            <h3>Background color:</h3>
+            <h3>red value  
+                <input type="text" id="gR">
+            </h3>
+            <h3>green value
+                <input type="text" id="gG">
+            </h3>
+            <h3>blue value
+                <input type="text" id="gB">
+            </h3>
+            <h3>width    
+                <input type="text" id="gW">
+            </h3>
+        </div>
+        <div>
+            <button onclick="myFunc()">Aprove</button>
+        </div>
+        <p id="txt" style="border:2px solid black;width:800px;">
+            And the Lord said to Abram: Go forth out of thy country, and from thy kindred, and out of thy father’s house, and come into the land which I shall shew thee.
+        </p>
+    </center>
+    </body>
+    <script>
+        
+        function myFunc()
+        {
+            var r1=document.getElementById('bR').value;
+            var g1=document.getElementById('bG').value;
+            var b1=document.getElementById('bB').value;
+            var w1=document.getElementById('bW').value;
+            var r2=document.getElementById('gR').value;
+            var g2=document.getElementById('gG').value;
+            var b2=document.getElementById('gB').value;
+            var w2=document.getElementById('gW').value;
+            txt.style.background="rgb("+r2+","+g2+","+b2+")";
+            txt.style.width=w2+"px";
+            txt.style.borderColor="rgb("+r1+","+g1+","+b1+")";
+            txt.style.borderWidth=w1+"px";
+        }
+    </script>
+</html>

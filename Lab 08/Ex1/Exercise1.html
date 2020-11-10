@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <titile><center>Exercise 1: Password validator<center></titile>
+    </head>
+    <body>
+	<center>
+        <h3>Enter the password(at least 8 characters long):</h3>
+        <input type="text" id="input1">
+        <h3>Please enther password again:</h3>
+        <input type="text" id="input2">
+        <h3> </h3>
+        <button onclick="myFunc()">Validate</button>
+	</center>
+    </body>
+    <script>
+        function myFunc()
+        {
+            var a=document.getElementById('input1').value;
+            var b=document.getElementById('input2').value;
+            if(a.length<8)
+            {
+                alert("The passwords are not at least 8 characters long");
+                return;
+            }
+            if(a!=b)
+            {
+                alert("The passwords entered don't match");
+            }
+        }
+    </script>
+</html>
